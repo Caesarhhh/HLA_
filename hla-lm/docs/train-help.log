@@ -1,0 +1,124 @@
+usage: pretrain.py [-h] [--output_root OUTPUT_ROOT] [--wandb_dir WANDB_DIR]
+                   [--train_data_dir TRAIN_DATA_DIR]
+                   [--train_data_dir_raw TRAIN_DATA_DIR_RAW]
+                   [--val_data_dir VAL_DATA_DIR]
+                   [--val_data_dir_raw VAL_DATA_DIR_RAW]
+                   [--model_name {GatedDeltaNet_GLA_GDN_Release_1.3B,GatedDeltaNet_Release_1.3B}]
+                   [--exp_name EXP_NAME] [--exp_group EXP_GROUP]
+                   [--train_config TRAIN_CONFIG] [--resume]
+                   [--resume_from_checkpoint RESUME_FROM_CHECKPOINT]
+                   [--resume_micro_batch_size RESUME_MICRO_BATCH_SIZE]
+                   [--resume_dataloader_from_counters] [--debug]
+                   [--interactive_job] [--distributed_strategy {fsdp,ddp}]
+                   [--tokenizer_name TOKENIZER_NAME]
+                   [--learning_rate LEARNING_RATE] [--total_evals TOTAL_EVALS]
+                   [--eval_iters EVAL_ITERS]
+                   [--log_step_interval LOG_STEP_INTERVAL]
+                   [--save_step_interval SAVE_STEP_INTERVAL]
+                   [--save_step_archive_interval SAVE_STEP_ARCHIVE_INTERVAL]
+                   [--eval_step_interval EVAL_STEP_INTERVAL] [--seed SEED]
+                   [--num_extrapol NUM_EXTRAPOL] [--weight_decay WEIGHT_DECAY]
+                   [--beta1 BETA1] [--beta2 BETA2] [--grad_clip GRAD_CLIP]
+                   [--eval_before_training] [--nnodes NNODES]
+                   [--train_num_workers TRAIN_NUM_WORKERS]
+                   [--val_num_workers VAL_NUM_WORKERS]
+                   [--micro_batch_size MICRO_BATCH_SIZE]
+                   [--max_tokens_override MAX_TOKENS_OVERRIDE]
+                   [--stop_after_step STOP_AFTER_STEP]
+                   [--warmup_tokens_override WARMUP_TOKENS_OVERRIDE]
+                   [--gradient_accumulation_steps_override GRADIENT_ACCUMULATION_STEPS_OVERRIDE]
+                   [--save_step_checkpoints]
+                   [--router_stats_step_interval ROUTER_STATS_STEP_INTERVAL]
+                   [--router_stats_first_step]
+
+LLM Training
+
+options:
+  -h, --help            show this help message and exit
+
+hyperparameters:
+  --output_root OUTPUT_ROOT
+                        output root directory
+  --wandb_dir WANDB_DIR
+                        wandb directory
+  --train_data_dir TRAIN_DATA_DIR
+                        training data directory
+  --train_data_dir_raw TRAIN_DATA_DIR_RAW
+                        training data directory (raw file for stream tok)
+  --val_data_dir VAL_DATA_DIR
+                        validation data directory
+  --val_data_dir_raw VAL_DATA_DIR_RAW
+                        validation data directory (raw file for stream tok)
+  --model_name {GatedDeltaNet_GLA_GDN_Release_1.3B,GatedDeltaNet_Release_1.3B}
+                        model name
+  --exp_name EXP_NAME   experiment name
+  --exp_group EXP_GROUP
+                        experiment group name
+  --train_config TRAIN_CONFIG
+                        training config
+  --resume              resume flag
+  --resume_from_checkpoint RESUME_FROM_CHECKPOINT
+                        load training state from this checkpoint without
+                        skipping the new dataloader
+  --resume_micro_batch_size RESUME_MICRO_BATCH_SIZE
+                        micro batch size used to create a resumed checkpoint;
+                        rescales iter_num to preserve its dataloader/token
+                        position. Use -1 to infer the old accumulation from
+                        checkpoint counters.
+  --resume_dataloader_from_counters
+                        skip the dataloader up to the initialized iter_num
+                        without loading optimizer state
+  --debug               debug flag
+  --interactive_job     debug flag
+  --distributed_strategy {fsdp,ddp}
+                        multi-GPU strategy
+  --tokenizer_name TOKENIZER_NAME
+  --learning_rate LEARNING_RATE
+                        learning rate
+  --total_evals TOTAL_EVALS
+                        total number of evals
+  --eval_iters EVAL_ITERS
+                        number of evaluation iterations
+  --log_step_interval LOG_STEP_INTERVAL
+                        log_step_interval
+  --save_step_interval SAVE_STEP_INTERVAL
+                        save_step_interval
+  --save_step_archive_interval SAVE_STEP_ARCHIVE_INTERVAL
+                        interval for non-overwriting step checkpoints; 0 uses
+                        save_step_interval
+  --eval_step_interval EVAL_STEP_INTERVAL
+                        eval_step_interval
+  --seed SEED           seed
+  --num_extrapol NUM_EXTRAPOL
+                        num_extrapol
+  --weight_decay WEIGHT_DECAY
+                        weight decay
+  --beta1 BETA1         beta1
+  --beta2 BETA2         beta2
+  --grad_clip GRAD_CLIP
+                        gradient clip
+  --eval_before_training
+                        do validation before the training starts
+  --nnodes NNODES       number of nodes
+  --train_num_workers TRAIN_NUM_WORKERS
+  --val_num_workers VAL_NUM_WORKERS
+  --micro_batch_size MICRO_BATCH_SIZE
+                        micro batch size
+  --max_tokens_override MAX_TOKENS_OVERRIDE
+                        override max tokens for smoke/debug runs
+  --stop_after_step STOP_AFTER_STEP
+                        stop after this optimizer step while retaining the
+                        max-token LR schedule; 0 disables
+  --warmup_tokens_override WARMUP_TOKENS_OVERRIDE
+                        override warmup tokens; 0 keeps one percent of max
+                        tokens
+  --gradient_accumulation_steps_override GRADIENT_ACCUMULATION_STEPS_OVERRIDE
+                        override grad accumulation for smoke/debug runs
+  --save_step_checkpoints
+                        also save non-overwriting stepNNNNNN checkpoints at
+                        save_step_interval
+  --router_stats_step_interval ROUTER_STATS_STEP_INTERVAL
+                        log GLA/HLA router distribution stats every N
+                        optimizer steps; 0 disables
+  --router_stats_first_step
+                        also log router distribution stats on optimizer step 1

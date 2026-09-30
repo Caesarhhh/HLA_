@@ -1,0 +1,7 @@
+PASS strict layer checkpoint compatibility 15
+PASS 18 router forward/backward comparisons including chunk/pool boundaries
+PASS affine A/B summaries
+PASS affine history composition and gate gradients in train/eval modes
+PASS tiny GPT construction 1773068
+PASS 8 cached prefill + 24 decode comparisons, including chunk boundaries and batched cache
+PASS budget/effective-support/binary auxiliary losses and input gradients

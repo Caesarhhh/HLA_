@@ -1,0 +1,80 @@
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/wy_fast.py:581: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/wy_fast.py:590: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/chunk.py:558: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/chunk.py:588: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/home/zche0431/dv94/czk/miniconda3/lib/python3.13/site-packages/lightning/fabric/plugins/environments/slurm.py:204: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python /fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hl ...
+Using bfloat16 Automatic Mixed Precision (AMP)
+Seed set to 3407
+##### Infra Details #####
+Number of Nodes: 1
+Number of GPUs: 1
+##### Training Details #####
+Maximum number of training tokens: 4096
+Micro batch size: 1
+Batch size: 512
+Namespace(output_root='/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf', wandb_dir='/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/wandb/512x4k_100B_tiny_execution_check', train_data_dir='/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/data', train_data_dir_extra='', train_data_dir_extra_weight=0.0, train_data_dir_raw='', val_data_dir='', val_data_dir_raw='', model_name='GatedDeltaNet_GLA_GDN_Release_1.3B', init_from_release_model='', init_from_training_checkpoint_model_only='', init_from_training_checkpoint_counters=False, exp_name='tiny_execution_check', exp_group='', train_config='512x4k_100B', resume=False, resume_from_checkpoint='', resume_trainable_only_checkpoint='', resume_micro_batch_size=0, resume_dataloader_from_counters=False, debug=False, interactive_job=True, distributed_strategy='fsdp', tokenizer_name='TinyLlama/TinyLlama_v1.1', learning_rate=0.0004, total_evals=400, eval_iters=10, log_step_interval=1, save_step_interval=1, save_step_archive_interval=0, eval_step_interval=1000, seed=3407, num_extrapol=2, weight_decay=0.1, beta1=0.9, beta2=0.95, grad_clip=1.0, eval_before_training=False, nnodes=None, train_num_workers=0, val_num_workers=1, micro_batch_size=1, max_tokens_override=4096, stop_after_step=1, warmup_tokens_override=4096, gradient_accumulation_steps_override=1, trainable_params='all', gla_route_init='random', gla_partial_scratch_init='none', save_step_checkpoints=True, trainable_only_checkpoints=False, router_stats_step_interval=0, router_stats_first_step=False, gla_router_logit_scale=1.0, gla_router_entropy_loss_coef=0.0, gla_router_gate_budget_loss_coef=0.005, gla_router_gate_budget_target=3.0, gla_router_gate_budget_exclude_current=True, gla_router_gate_sparse_loss_coef=0.001, gla_router_gate_sparse_target=2.0, gla_router_gate_binary_loss_coef=0.001, gla_router_gate_budget_weight_by_lm_loss=False, gla_router_gate_budget_lm_loss_weight_min=0.25, gla_router_gate_budget_weight_by_oracle_delta=False, gla_router_gate_budget_oracle_delta_scale=1.0, gla_router_gate_budget_oracle_delta_weight_min=0.05, gla_router_lm_loss_weight_by_oracle_delta=False, gla_router_lm_loss_oracle_delta_weight_coef=1.0, gla_router_lm_loss_oracle_delta_weight_max=5.0, gla_router_current_always_on=True, gla_router_sigmoid_temperature=1.0, gla_router_gate_decay_by_gate=False, gla_router_share_layer0_routing=False, gla_router_route_source='raw_qk', gla_router_score='logmean', gla_router_use_rope=-1, gla_router_pool_self_attention=1, gla_router_gate='affine_sigmoid', gla_router_sigmoid_bias=2.2, gla_router_sigmoid_topk=0, gla_router_sigmoid_topk_temperature=-1.0, gla_router_amp_base=-1.0, gla_router_amp_max_lag=0, mix_chunk_size_override=256, mix_pool_size_override=16, mix_routing_dim_override=0, mix_apply_gdn_decay=0, train_block_size=4096, out_dir='/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/outputs/512x4k_100B_tiny_execution_check', nodes=1, min_lr=4e-05, batch_size=512, gradient_accumulation_steps=1, warmup_tokens=4096, max_tokens=4096, log_iter_interval=1, hparams={'devices': 1, 'name': '512x4k_100B_tiny_execution_check', 'nodes': 1, 'micro_batch_size': 1, 'max_tokens': 4096, 'global_batch_size': 1, 'gradient_accumulation_steps': 1, 'log_iter_interval': 1, 'activation_checkpointing': False, 'compile_blocks': False, 'affine_kernel_flags': {'GDN_AFFINE_FINAL_STATE_BACKWARD': '0', 'GDN_AFFINE_NATIVE_BF16': '0', 'GDN_AFFINE_BATCHED_DQKW': '0', 'GDN_AFFINE_BATCHED_WY': '0', 'GDN_AFFINE_BATCHED_PRECISION': 'tf32x3', 'GDN_AFFINE_TF32X3': '0', 'GDN_COMPILE_AFFINE_HISTORY_TRAINING': '1', 'GDN_SKIP_DIRECT_POOL_CURRENT_SCORES': '0', 'GDN_SKIP_SELFATTN_POOL_CURRENT_SCORES': '0', 'DISABLE_MMA_V5': '0'}}, gdn_compile_blocks=False)
+wandb: WARNING The anonymous setting has no effect and will be removed in a future version.
+wandb: WARNING git root /fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/wandb/512x4k_100B_tiny_execution_check does not exist
+Overriding config mix_chunk_size from 256 to 256
+Overriding config mix_pool_size from 16 to 16
+Overriding config mix_apply_gdn_decay from False to False
+Overriding config gla_router_route_source from raw_qk to raw_qk
+Overriding config gla_router_use_logmean from True to True
+Overriding config gla_router_pool_self_attention from True to True
+Overriding config gla_router_gate from affine_sigmoid to affine_sigmoid
+Overriding config gla_router_sigmoid_bias from 2.2 to 2.2
+Overriding config gla_router_sigmoid_topk from 0 to 0
+Training block_size: 4096
+Loading model with {'org': 'linear-moe-hub', 'name': 'GatedDeltaNet_GLA_GDN_Release_1.3B', 'block_size': 4096, 'vocab_size': 256, 'padding_multiple': 64, 'padded_vocab_size': 256, 'n_layer': 2, 'n_head': 4, 'n_embd': 256, 'rotary_percentage': 1.0, 'parallel_residual': False, 'bias': False, 'local_window': 2048, 'mlp': True, 'full_per_layer': 1000000, 'mb_per_layer': -1, 'ret_per_layer': -1, 'gla_per_layer': -1, 'nope': True, 'mamba': False, 'sc_attn': False, 'rms_norm': True, 'residual_in_fp32': True, 'fused_add_norm': True, 'mamba_init': True, 'attn_layer_pos': None, 'gated_delta_per_layer': 1, 'gated_delta_variant': 'gla_gdn', 'gated_delta_release': True, 'gated_delta_head_dim': 128, 'gated_delta_num_heads': 2, 'gated_delta_expand_v': 1.0, 'gated_delta_conv_size': 4, 'gated_delta_use_short_conv': False, 'gated_delta_use_gate': True, 'gated_delta_use_residual': False, 'mix_chunk_size': 256, 'mix_pool_size': 16, 'mix_routing_dim': None, 'mix_apply_gdn_decay': False, 'gla_router_route_source': 'raw_qk', 'gla_router_use_logmean': True, 'gla_router_use_rope': False, 'gla_router_pool_self_attention': True, 'gla_router_gate': 'affine_sigmoid', 'gla_router_sigmoid_bias': 2.2, 'gla_router_sigmoid_topk': 0, 'gla_router_sigmoid_topk_temperature': 0.25, 'gla_router_state_sum_no_decay': False, 'gla_router_amp_base': 0.0, 'gla_router_amp_max_lag': 64, 'mhla_num_chunks': 64, 'mhla_train_chunks': None, 'n_query_groups': 4, 'shared_attention_norm': False, '_norm_class': 'SimpleRMSNorm', 'norm_eps': 1e-06, '_mlp_class': 'LLaMAMLP', 'intermediate_size': 512, 'condense_ratio': 1}
+Time to instantiate model: 0.05 seconds.
+Total parameters 1,707,276
+GPT(
+  (lm_head): Linear(in_features=256, out_features=256, bias=False)
+  (transformer): ModuleDict(
+    (wte): Embedding(256, 256)
+    (h): ModuleList(
+      (0-1): 2 x Block(
+        (norm_1): SimpleRMSNorm()
+        (attn): ReleaseGLAGatedDeltaNet(
+          (q_proj): Linear(in_features=256, out_features=256, bias=False)
+          (k_proj): Linear(in_features=256, out_features=256, bias=False)
+          (v_proj): Linear(in_features=256, out_features=256, bias=False)
+          (a_proj): Linear(in_features=256, out_features=2, bias=False)
+          (b_proj): Linear(in_features=256, out_features=2, bias=False)
+          (g_proj): Linear(in_features=256, out_features=256, bias=False)
+          (o_norm): SimpleRMSNormGated()
+          (o_proj): Linear(in_features=256, out_features=256, bias=False)
+          (route_q_proj): HeadwiseLinear()
+          (route_pool_attn_k_proj): HeadwiseLinear()
+          (route_pool_attn_v_proj): HeadwiseLinear()
+          (route_pool_attn_o_proj): HeadwiseLinear()
+        )
+        (norm_2): SimpleRMSNorm()
+        (mlp): ReleaseGatedMLP(
+          (gate_proj): Linear(in_features=256, out_features=1024, bias=False)
+          (down_proj): Linear(in_features=512, out_features=256, bias=False)
+        )
+      )
+    )
+    (ln_f): SimpleRMSNorm()
+  )
+)
+Set GLA router_logit_scale=1.0 on 2 modules
+Set GLA router_current_always_on=True on 2 modules
+Set GLA router_sigmoid_temperature=1.0 on 2 modules
+Trainable parameter mode=all: 1,773,068 params across 40 tensors
+Attached router gate budget loss hooks to 2 GLA modules with coef=0.005 target=3.0 exclude_current=True weight_by_lm_loss=False lm_loss_weight_min=0.25
+Attached router sparse/binary loss hooks to 2 GLA modules with sparse_coef=0.001 target=2.0 binary_coef=0.001
+step 1 router_gate_budget_loss 3.354748 coef 0.005 target 3.0
+step 1 router_sparse_loss 62.999992 coef 0.001 target 2.0 router_binary_loss 0.091248 coef 0.001
+iter 1 step 1: loss 5.6836, iter time: 307448.23ms (optimizer.step) remaining time: 0.00 hours.  or 0.00 days.  total training throughput 0.01K tokens/s per GPU. total trained tokens: 4.096e-06 B tokens peak memory allocate 0.892596736 GB
+Saving checkpoint to '/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/outputs/512x4k_100B_tiny_execution_check/latest-model-ckpt.pth'
+Saving checkpoint to '/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/outputs/512x4k_100B_tiny_execution_check/step000001-model-ckpt.pth'
+Saving checkpoint to '/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/outputs/train_smoke_e5grepmf/outputs/512x4k_100B_tiny_execution_check/final-model-ckpt.pth'
+Training time: 307.85s
+Memory used: 0.89 GB
+PASS real trainer: synthetic 4K batch, tiny model, router losses, optimizer and checkpoint

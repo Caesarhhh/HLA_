@@ -1,0 +1,9 @@
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/wy_fast.py:581: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/wy_fast.py:590: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/chunk.py:558: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-llm/lit_gpt/gated_delta_rule_ops/chunk.py:588: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+PASS training + cached prefill/decode; loss=245.58701; GPU=NVIDIA H200 NVL

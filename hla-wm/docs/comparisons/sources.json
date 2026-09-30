@@ -1,0 +1,266 @@
+[
+  {
+    "id": "stage1_hard80_game_style_002_f92_f824",
+    "group": "stage1",
+    "title": "game_style_002",
+    "scene": "game_style_002",
+    "split": "Hard",
+    "mode": "Stage 1",
+    "methods": {
+      "baseline": {
+        "video": "videos/stage1_hard80_game_style_002_f92_f824_baseline.mp4",
+        "poster": "assets/posters/stage1_hard80_game_style_002_f92_f824_baseline.jpg",
+        "sha256": "8b1aada4cf4ac510ea9ad850c7da923349cffa964a2280b31fe5e6737e9f0164"
+      },
+      "ours": {
+        "video": "videos/stage1_hard80_game_style_002_f92_f824_ours.mp4",
+        "poster": "assets/posters/stage1_hard80_game_style_002_f92_f824_ours.jpg",
+        "sha256": "28432a32a2dc33fed93c346edc144e7e204e5a9e9c2a92c65930f01a2e948d82"
+      }
+    },
+    "selection_id": "hard80_game_style_002_f92_f824",
+    "inference_mode": "Stage 1 (no refiner)"
+  },
+  {
+    "id": "stage1_simple80_game_style_013_f300_f596",
+    "group": "stage1",
+    "title": "game_style_013",
+    "scene": "game_style_013",
+    "split": "Simple",
+    "mode": "Stage 1",
+    "methods": {
+      "baseline": {
+        "video": "videos/stage1_simple80_game_style_013_f300_f596_baseline.mp4",
+        "poster": "assets/posters/stage1_simple80_game_style_013_f300_f596_baseline.jpg",
+        "sha256": "b3451643baab04612ff6300c95170f33e1c337c3d386536817559ad3015e4726"
+      },
+      "ours": {
+        "video": "videos/stage1_simple80_game_style_013_f300_f596_ours.mp4",
+        "poster": "assets/posters/stage1_simple80_game_style_013_f300_f596_ours.jpg",
+        "sha256": "4fde73384f46d9930b2414179b0d58cb3540a42a624df4e6fc62ee4d8a3ee367"
+      }
+    },
+    "selection_id": "simple80_game_style_013_f300_f596",
+    "inference_mode": "Stage 1 (no refiner)"
+  },
+  {
+    "id": "stage1_simple80_indoor_011_f272_f800",
+    "group": "stage1",
+    "title": "indoor_011",
+    "scene": "indoor_011",
+    "split": "Simple",
+    "mode": "Stage 1",
+    "methods": {
+      "baseline": {
+        "video": "videos/stage1_simple80_indoor_011_f272_f800_baseline.mp4",
+        "poster": "assets/posters/stage1_simple80_indoor_011_f272_f800_baseline.jpg",
+        "sha256": "4142bad0d7b22cdc93c1140b2cc1a06f7502d70217a80f2d8919fd75ed41c0ae"
+      },
+      "ours": {
+        "video": "videos/stage1_simple80_indoor_011_f272_f800_ours.mp4",
+        "poster": "assets/posters/stage1_simple80_indoor_011_f272_f800_ours.jpg",
+        "sha256": "1d7385aaf740866b27a097a653da3c748a21a558da3967eee6d3fce3f4a196e6"
+      }
+    },
+    "selection_id": "simple80_indoor_011_f272_f800",
+    "inference_mode": "Stage 1 (no refiner)"
+  },
+  {
+    "id": "stage1_simple80_indoor_014_f720_f928",
+    "group": "stage1",
+    "title": "indoor_014",
+    "scene": "indoor_014",
+    "split": "Simple",
+    "mode": "Stage 1",
+    "methods": {
+      "baseline": {
+        "video": "videos/stage1_simple80_indoor_014_f720_f928_baseline.mp4",
+        "poster": "assets/posters/stage1_simple80_indoor_014_f720_f928_baseline.jpg",
+        "sha256": "d4c136cd2c23077502fb8446dcae43b91b68a6e6b16c7df2b8493944e52f3ef0"
+      },
+      "ours": {
+        "video": "videos/stage1_simple80_indoor_014_f720_f928_ours.mp4",
+        "poster": "assets/posters/stage1_simple80_indoor_014_f720_f928_ours.jpg",
+        "sha256": "97761d8748498ea7e031a63a62b9aa15ba371ed8a022321f7f268d4027087877"
+      }
+    },
+    "selection_id": "simple80_indoor_014_f720_f928",
+    "inference_mode": "Stage 1 (no refiner)"
+  },
+  {
+    "id": "ar_refiner_hard80_game_style_005_f472_f708",
+    "group": "ar_refiner",
+    "title": "game_style_005",
+    "scene": "game_style_005",
+    "split": "Hard",
+    "mode": "AR refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/ar_refiner_hard80_game_style_005_f472_f708_baseline.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_game_style_005_f472_f708_baseline.jpg",
+        "sha256": "27aee7ad05528a809ac0724f7f234d35a82b349b4d39985ff9c925d6ae05011d"
+      },
+      "ours": {
+        "video": "videos/ar_refiner_hard80_game_style_005_f472_f708_ours.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_game_style_005_f472_f708_ours.jpg",
+        "sha256": "68727bdecb25f1c64a0e0ab20ef9c5358ffddc73c636bea4cf3b7736b7b9902e"
+      }
+    },
+    "selection_id": "hard80_game_style_005_f472_f708",
+    "inference_mode": "Full-sequence autoregressive refiner"
+  },
+  {
+    "id": "ar_refiner_hard80_indoor_018_f76_f852",
+    "group": "ar_refiner",
+    "title": "indoor_018",
+    "scene": "indoor_018",
+    "split": "Hard",
+    "mode": "AR refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/ar_refiner_hard80_indoor_018_f76_f852_baseline.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_indoor_018_f76_f852_baseline.jpg",
+        "sha256": "c0ad80ceb008289b88d3159161761780f7ed7bfac6045ae631e8c5a389cddc84"
+      },
+      "ours": {
+        "video": "videos/ar_refiner_hard80_indoor_018_f76_f852_ours.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_indoor_018_f76_f852_ours.jpg",
+        "sha256": "8c97d6a0dc9b077ad56f1406bf3fb1bc8820c848c6968acba72d510aed4c4bd9"
+      }
+    },
+    "selection_id": "hard80_indoor_018_f76_f852",
+    "inference_mode": "Full-sequence autoregressive refiner"
+  },
+  {
+    "id": "ar_refiner_hard80_outdoor_city_012_f28_f959",
+    "group": "ar_refiner",
+    "title": "outdoor_city_012",
+    "scene": "outdoor_city_012",
+    "split": "Hard",
+    "mode": "AR refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/ar_refiner_hard80_outdoor_city_012_f28_f959_baseline.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_outdoor_city_012_f28_f959_baseline.jpg",
+        "sha256": "fcb8ad7133d7febd6c79256225db76b75ee3c8c621089b52f90b2364c4701d0d"
+      },
+      "ours": {
+        "video": "videos/ar_refiner_hard80_outdoor_city_012_f28_f959_ours.mp4",
+        "poster": "assets/posters/ar_refiner_hard80_outdoor_city_012_f28_f959_ours.jpg",
+        "sha256": "0cdac18d39145d1a8e21de865ae8679617472f2d181f107927933d3a57555a44"
+      }
+    },
+    "selection_id": "hard80_outdoor_city_012_f28_f959",
+    "inference_mode": "Full-sequence autoregressive refiner"
+  },
+  {
+    "id": "ar_refiner_simple80_outdoor_city_010_f368_f792",
+    "group": "ar_refiner",
+    "title": "outdoor_city_010",
+    "scene": "outdoor_city_010",
+    "split": "Simple",
+    "mode": "AR refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/ar_refiner_simple80_outdoor_city_010_f368_f792_baseline.mp4",
+        "poster": "assets/posters/ar_refiner_simple80_outdoor_city_010_f368_f792_baseline.jpg",
+        "sha256": "7d7de58d51f5a1b5f858d6faea0c34f8762657b6ce24d8c78617cb1690127667"
+      },
+      "ours": {
+        "video": "videos/ar_refiner_simple80_outdoor_city_010_f368_f792_ours.mp4",
+        "poster": "assets/posters/ar_refiner_simple80_outdoor_city_010_f368_f792_ours.jpg",
+        "sha256": "b37cc8089c798843eafc9a13f39be842da96c673181ce594f7ebb490af7c0eb4"
+      }
+    },
+    "selection_id": "simple80_outdoor_city_010_f368_f792",
+    "inference_mode": "Full-sequence autoregressive refiner"
+  },
+  {
+    "id": "official_bidirectional_refiner_hard80_game_style_005_f472_f708",
+    "group": "official_bidirectional_refiner",
+    "title": "game_style_005",
+    "scene": "game_style_005",
+    "split": "Hard",
+    "mode": "Bidirectional refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/official_bidirectional_refiner_hard80_game_style_005_f472_f708_baseline.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_hard80_game_style_005_f472_f708_baseline.jpg",
+        "sha256": "2018ed7c2cbad35b5ff9b1f1b6e34ecd55174c960f95687ccc9a554d64b45647"
+      },
+      "ours": {
+        "video": "videos/official_bidirectional_refiner_hard80_game_style_005_f472_f708_ours.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_hard80_game_style_005_f472_f708_ours.jpg",
+        "sha256": "14efaaa2b333dbfef8d8635990b20f57b1acbde7cc06de623d2e0fb7ab642294"
+      }
+    },
+    "selection_id": "hard80_game_style_005_f472_f708",
+    "inference_mode": "Official single-shot bidirectional refiner"
+  },
+  {
+    "id": "official_bidirectional_refiner_hard80_game_style_011_f400_f776",
+    "group": "official_bidirectional_refiner",
+    "title": "game_style_011",
+    "scene": "game_style_011",
+    "split": "Hard",
+    "mode": "Bidirectional refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/official_bidirectional_refiner_hard80_game_style_011_f400_f776_baseline.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_hard80_game_style_011_f400_f776_baseline.jpg",
+        "sha256": "a53558afef86e3a8d2e43f78e83b52e8e18766834d326f48a3543533d8c9ef3c"
+      },
+      "ours": {
+        "video": "videos/official_bidirectional_refiner_hard80_game_style_011_f400_f776_ours.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_hard80_game_style_011_f400_f776_ours.jpg",
+        "sha256": "287e25ffcd1d7aa8169a9547dd55472b1503cc1b67250777f19167bf8f39ffda"
+      }
+    },
+    "selection_id": "hard80_game_style_011_f400_f776",
+    "inference_mode": "Official single-shot bidirectional refiner"
+  },
+  {
+    "id": "official_bidirectional_refiner_simple80_outdoor_nature_017_f284_f788",
+    "group": "official_bidirectional_refiner",
+    "title": "outdoor_nature_017",
+    "scene": "outdoor_nature_017",
+    "split": "Simple",
+    "mode": "Bidirectional refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/official_bidirectional_refiner_simple80_outdoor_nature_017_f284_f788_baseline.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_simple80_outdoor_nature_017_f284_f788_baseline.jpg",
+        "sha256": "ccaf6a4ee7f089e891d3d64989f3f3da4db39e16dc3f6d2b639eaf6104598f05"
+      },
+      "ours": {
+        "video": "videos/official_bidirectional_refiner_simple80_outdoor_nature_017_f284_f788_ours.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_simple80_outdoor_nature_017_f284_f788_ours.jpg",
+        "sha256": "43cea2fc7cfe5d3b48ea076632810aa7ecfb89999329d7065f05c1437a907492"
+      }
+    },
+    "selection_id": "simple80_outdoor_nature_017_f284_f788",
+    "inference_mode": "Official single-shot bidirectional refiner"
+  },
+  {
+    "id": "official_bidirectional_refiner_simple80_outdoor_nature_018_f608_f728",
+    "group": "official_bidirectional_refiner",
+    "title": "outdoor_nature_018",
+    "scene": "outdoor_nature_018",
+    "split": "Simple",
+    "mode": "Bidirectional refinement",
+    "methods": {
+      "baseline": {
+        "video": "videos/official_bidirectional_refiner_simple80_outdoor_nature_018_f608_f728_baseline.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_simple80_outdoor_nature_018_f608_f728_baseline.jpg",
+        "sha256": "4d639f54d2437e5a20efb77378beedea61138594ca30254b27bba3921f7964f9"
+      },
+      "ours": {
+        "video": "videos/official_bidirectional_refiner_simple80_outdoor_nature_018_f608_f728_ours.mp4",
+        "poster": "assets/posters/official_bidirectional_refiner_simple80_outdoor_nature_018_f608_f728_ours.jpg",
+        "sha256": "0074e751851bcba56d2c6214f381e4bd39232314a46b80c8f3ec798b7a5fd98b"
+      }
+    },
+    "selection_id": "simple80_outdoor_nature_018_f608_f728",
+    "inference_mode": "Official single-shot bidirectional refiner"
+  }
+]

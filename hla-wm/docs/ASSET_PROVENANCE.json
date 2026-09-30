@@ -1,0 +1,16 @@
+{
+  "figure_source": "Project illustrations",
+  "figures": {
+    "method.png": 3,
+    "teaser.png": 1,
+    "qualitative.png": 5
+  },
+  "zip_members": {
+    "method.png": "figures/hla_wm_method.pdf",
+    "teaser.png": "figures/vis/indoor_005_seed47_homepage_compact.pdf",
+    "qualitative.png": [
+      "figures/vis/hard80_indoor_018_f76_f852.pdf",
+      "figures/vis/outdoor_city_015_2x4_enhanced.pdf"
+    ]
+  }
+}

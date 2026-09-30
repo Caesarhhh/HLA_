@@ -1,0 +1,15 @@
+{
+  "figure_source": "Project illustrations",
+  "figures": {
+    "method.png": 2,
+    "motivation.png": 1
+  },
+  "zip_members": {
+    "method.png": "images/method/hlav2.pdf",
+    "motivation.png": [
+      "images/intro/hla_motivation_panel_a_gla_retention_20260818.pdf",
+      "images/intro/hla_motivation_panel_b_gdn_retention_20260818.pdf",
+      "images/intro/hla_motivation_panel_c_layerwise_cosine_20260818.pdf"
+    ]
+  }
+}

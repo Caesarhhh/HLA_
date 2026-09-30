@@ -1,0 +1,69 @@
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+/tmp/zche0431/sana_wm_kvmatch_20260922/pydeps/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/zche0431/dv94/czk/miniconda3/envs/sana_new/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-wm/diffusion/model/wan/model.py:124: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-wm/diffusion/model/wan/model.py:134: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/fs04/scratch2/dv94/oldscratch/czk/efficiency/hla/hla-wm/diffusion/model/nets/fastlinear/modules/nn/norm.py:186: UserWarning: Cannot import apex RMSNorm, switch to vanilla implementation
+  warnings.warn("Cannot import apex RMSNorm, switch to vanilla implementation")
+2026-09-26 20:40:55 - [Sana] - INFO - [precision] stage1=bf16 refiner=bf16
+[LTX2VAE_diffusers_causal] Loading model from /tmp/zche0431/sana_wm_kvmatch_20260922/streaming_checkpoint/ltx2_causal_vae
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 93.84it/s]
+Failed to load null embed from None....'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.. Ignore the error during inference
+use pe: True, pos embed type: casual_wan_rope, position embed interpolation: 1.0, base size: 22
+attention type: BidirectionalGDNTriton; ffn type: CachedGLUMBConvTemp; self-attn head dim: 112; self-attn qk norm: True; cross-attn type: flash;  cross-attn qk norm: True; autocast linear attn: False
+Hybrid attention (softmax_every_n=4):
+  attn_type_list = ['BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton', 'BidirectionalGDNTriton']
+  camctrl_cls_list = ['CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedSoftmaxUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedSoftmaxUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedSoftmaxUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedSoftmaxUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedChunkCausalGDNUCPESinglePathLiteLA', 'CachedSoftmaxUCPESinglePathLiteLA']
+Failed to load null embed from None....'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.. Ignore the error during inference
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedSoftmaxUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedSoftmaxUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedSoftmaxUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedSoftmaxUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedChunkCausalGDNUCPESinglePathLiteLA
+Initializing camera branch QKV from base model QKV for CachedSoftmaxUCPESinglePathLiteLA
+[Sana] Loading model from /tmp/zche0431/sana_wm_kvmatch_20260922/streaming_checkpoint/sana_dit/model.pt
+[Sana] Loaded model from /tmp/zche0431/sana_wm_kvmatch_20260922/streaming_checkpoint/sana_dit/model.pt
+2026-09-26 20:41:20 - [Sana] - INFO - Loaded SanaMSVideoCamCtrlStreaming_1600M_P1_D20 (2,661,800,448 params)
+2026-09-26 20:41:34 - [Sana] - WARNING - Missing keys: ['pos_embed']
+Processing chunk 0:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 0:  25%|██▌       | 1/4 [01:01<03:05, 61.67s/it]Processing chunk 0:  50%|█████     | 2/4 [01:01<00:50, 25.48s/it]Processing chunk 0:  75%|███████▌  | 3/4 [01:01<00:13, 13.91s/it]Processing chunk 0: 100%|██████████| 4/4 [01:02<00:00,  8.48s/it]Processing chunk 0: 100%|██████████| 4/4 [01:02<00:00, 15.53s/it]
+Processing chunk 1:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 1:  25%|██▌       | 1/4 [00:12<00:38, 12.72s/it]Processing chunk 1:  50%|█████     | 2/4 [00:12<00:10,  5.31s/it]Processing chunk 1:  75%|███████▌  | 3/4 [00:12<00:02,  2.94s/it]Processing chunk 1: 100%|██████████| 4/4 [00:13<00:00,  1.83s/it]Processing chunk 1: 100%|██████████| 4/4 [00:13<00:00,  3.27s/it]
+Processing chunk 2:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 2:  25%|██▌       | 1/4 [00:00<00:00,  7.50it/s]Processing chunk 2:  50%|█████     | 2/4 [00:00<00:00,  7.74it/s]Processing chunk 2:  75%|███████▌  | 3/4 [00:00<00:00,  7.69it/s]Processing chunk 2: 100%|██████████| 4/4 [00:00<00:00,  7.66it/s]Processing chunk 2: 100%|██████████| 4/4 [00:00<00:00,  7.66it/s]
+[Sana] SANA_WM_GDN_REPLAY_KEEP_LAST_CHUNKS=1, SANA_WM_GDN_REPLAY_SINK_CHUNKS=1: building current cache from sink + recent replay
+[Sana] replay chunk 3: selected past chunks [0, 1, 2]
+[Sana][selected-cache-recompose] chunk=3 selected=3 camera_blocks=0 softmax_blocks=5 historical_replay_forward_count=0
+Processing chunk 3:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 3:  25%|██▌       | 1/4 [00:00<00:00,  7.28it/s]Processing chunk 3:  50%|█████     | 2/4 [00:00<00:00,  7.50it/s]Processing chunk 3:  75%|███████▌  | 3/4 [00:00<00:00,  7.47it/s]Processing chunk 3: 100%|██████████| 4/4 [00:00<00:00,  7.44it/s]Processing chunk 3: 100%|██████████| 4/4 [00:00<00:00,  7.44it/s]
+[Sana] replay chunk 4: selected past chunks [0, 2, 3]
+[Sana][selected-cache-recompose] chunk=4 selected=3 camera_blocks=0 softmax_blocks=5 historical_replay_forward_count=0
+Processing chunk 4:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 4:  25%|██▌       | 1/4 [00:00<00:00,  7.33it/s]Processing chunk 4:  50%|█████     | 2/4 [00:00<00:00,  7.56it/s]Processing chunk 4:  75%|███████▌  | 3/4 [00:00<00:00,  7.49it/s]Processing chunk 4: 100%|██████████| 4/4 [00:00<00:00,  7.45it/s]Processing chunk 4: 100%|██████████| 4/4 [00:00<00:00,  7.46it/s]
+[Sana] replay chunk 5: selected past chunks [0, 3, 4]
+[Sana][selected-cache-recompose] chunk=5 selected=3 camera_blocks=0 softmax_blocks=5 historical_replay_forward_count=0
+Processing chunk 5:   0%|          | 0/4 [00:00<?, ?it/s]Processing chunk 5:  25%|██▌       | 1/4 [00:00<00:00,  7.31it/s]Processing chunk 5:  50%|█████     | 2/4 [00:00<00:00,  7.56it/s]Processing chunk 5:  75%|███████▌  | 3/4 [00:00<00:00,  7.49it/s]Processing chunk 5: 100%|██████████| 4/4 [00:00<00:00,  7.46it/s]Processing chunk 5: 100%|██████████| 4/4 [00:00<00:00,  7.46it/s]
+[Sana][historical-replay-audit] historical_replay_forward_count=0
+2026-09-26 20:42:55 - [Sana] - INFO - [timing] stage1 sample: 78.599s (latent shape (1, 128, 19, 22, 40))
+2026-09-26 20:42:56 - [Sana] - INFO - [refiner] 3-step Euler, start_sigma=0.9094
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:00,  5.52it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00, 11.12it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 13.55it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 12.06it/s]
+refiner:   0%|          | 0/3 [00:00<?, ?step/s]refiner:  33%|███▎      | 1/3 [00:01<00:02,  1.41s/step]refiner:  67%|██████▋   | 2/3 [00:03<00:01,  1.63s/step]refiner: 100%|██████████| 3/3 [00:04<00:00,  1.70s/step]refiner: 100%|██████████| 3/3 [00:04<00:00,  1.66s/step]
+2026-09-26 20:43:22 - [Sana] - INFO - [refiner] decoding 19 latent frames with diffusers LTX2 VAE
+2026-09-26 20:43:22 - [Sana] - INFO - [sana-vae] decoding 19 latent frames
+[LTX2VAE_diffusers_causal] Loading model from /tmp/zche0431/sana_wm_kvmatch_20260922/streaming_checkpoint/ltx2_causal_vae
+2026-09-26 20:43:27 - [Sana] - INFO - [timing] vae decode: 4.096s (latent T=19 -> pixels (1, 3, 145, 704, 1280))
+2026-09-26 20:43:30 - [Sana] - INFO - Saved outputs/smoke/top1_bi_generated.mp4
+outputs/smoke/top1_bi_generated.mp4
