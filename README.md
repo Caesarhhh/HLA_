@@ -8,6 +8,12 @@ Selective memory for language and video world models.</p>
   <a href="https://caesarhhh.github.io/hla-wm/#videos">Video Gallery</a>
 </p>
 
+## Project Demo
+
+[![HLA & HLA-WM project demo](docs/assets/HLA_HLA-WM_Demo_preview.gif)](https://github.com/Caesarhhh/HLA_/blob/main/docs/assets/HLA_HLA-WM_Demo_EN_v2_720p.mp4)
+
+*Click the preview to watch the full 90-second video with audio.*
+
 ## Get Started
 
 <table>
@@ -32,10 +38,6 @@ Camera-guided memory retrieval for consistent scene revisits in SANA-WM. No addi
 </td>
 </tr>
 </table>
-
-## Project Demo
-
-[**Watch the HLA & HLA-WM overview video (90 seconds) →**](https://github.com/Caesarhhh/HLA_/blob/main/docs/assets/HLA_HLA-WM_Demo_EN_v2_720p.mp4)
 
 ## News
 
