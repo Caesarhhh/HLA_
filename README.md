@@ -33,6 +33,10 @@ Camera-guided memory retrieval for consistent scene revisits in SANA-WM. No addi
 </tr>
 </table>
 
+## Project Demo
+
+[**Watch the HLA & HLA-WM overview video (90 seconds) →**](https://github.com/Caesarhhh/HLA_/blob/main/docs/assets/HLA_HLA-WM_Demo_EN_v2_720p.mp4)
+
 ## Video Preview
 
 [![SANA-WM (left) and HLA-WM (right): scene revisit comparison](hla-wm/docs/comparisons/ar_refiner_hard80_game_style_005_f472_f708.gif)](hla-wm/docs/comparisons/ar_refiner_hard80_game_style_005_f472_f708.mp4)
