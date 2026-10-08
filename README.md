@@ -10,9 +10,9 @@ Selective memory for language and video world models.</p>
 
 ## Project Demo
 
-[![HLA & HLA-WM project demo](docs/assets/HLA_HLA-WM_Demo_preview.gif)](https://github.com/Caesarhhh/HLA_/blob/main/docs/assets/HLA_HLA-WM_Demo_EN_v2_720p.mp4)
+[![HLA & HLA-WM project demo](docs/assets/HLA_HLA-WM_Demo_preview_hd.gif)](https://github.com/Caesarhhh/HLA_/blob/main/docs/assets/HLA_HLA-WM_Demo_EN_v2_1080p.mp4)
 
-*Click the preview to watch the full 90-second video with audio.*
+*Click the preview to watch the full 90-second video in 1080p with audio.*
 
 ## Get Started
 
